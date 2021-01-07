@@ -1,17 +1,15 @@
 import "./App.css";
-import Counter from "./components/counter";
+import Counter from "./components/Counter";
+import FetchComponent from "./components/Fetch";
 
 function App() {
   return (
     <div className="App">
       <h1>Welcome to the sandbox</h1>
-      <Counter />
+      {/* <Counter /> */}
+      <FetchComponent />
     </div>
   );
 }
-
-// const Counter = () => {
-//   return <h2>This is my counter mang.</h2>;
-// };
 
 export default App;
