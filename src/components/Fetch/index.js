@@ -7,31 +7,31 @@ const FetchComponent = () => {
   const [data, setData] = useState([]);
 
   const fetchData = async () => {
-    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-    const posts = await response.json();
-    setData(posts);
+    const response = await fetch(url);
+    const receivedData = await response.json();
+
+    setData(receivedData);
   };
 
   useEffect(() => {
     fetchData();
   }, []);
-
   return (
-    <div>
-      <h1>Fetch sandbox</h1>
-      <br />
-      <h2>Fetch output:</h2>
-      <ul>
+    <>
+      <h1>Fetch some things.</h1>
+      <h3>Well...here it is:</h3>
+      <div>
         {data.map((item) => {
           const { id, title } = item;
           return (
-            <li key={id}>
-              <strong>Post id: {id}.</strong>Post Title: {title}{" "}
-            </li>
+            <p key={id}>
+              <strong> ID: {id}</strong>
+              {title}
+            </p>
           );
         })}
-      </ul>
-    </div>
+      </div>
+    </>
   );
 };
 
