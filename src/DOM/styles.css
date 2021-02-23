@@ -1,0 +1,29 @@
+/* CSS Vars */
+
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  border-bottom: #260029 solid 1px;
+}
+
+main {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
