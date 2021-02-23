@@ -1,7 +1,9 @@
 import "./App.css";
 import Counter from "./components/Counter";
 import FetchComponent from "./components/Fetch";
-import ExploreUseEffect from "./components/ExploreUseEffect";
+import PracticeUseContext from "./components/HookPractice/UseContext/PracticeUseContext";
+
+import PracticeUseRef from "./components/HookPractice/UseRef/practice_useRef.js";
 
 function App() {
   return (
@@ -9,7 +11,9 @@ function App() {
       <h1>Welcome to the sandbox</h1>
       {/* <Counter initialCount={0} /> */}
       {/* <FetchComponent /> */}
-      <ExploreUseEffect />
+      {/* <ExploreUseEffect /> */}
+      {/* <PracticeUseRef /> */}
+      <PracticeUseContext />
     </div>
   );
 }
